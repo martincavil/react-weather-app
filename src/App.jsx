@@ -13,7 +13,7 @@ function App() {
     if(e.key === 'Enter') {
       axios.get(url).then((response) => {
         setData(response.data)
-        console.log(response.data)
+        // console.log(response.data)
     })
     setLocation('')
   }
@@ -33,7 +33,7 @@ function App() {
 
         <div className="top">
           <div className="location">
-            <h2>{data.name}</h2>
+            {data.name ? <h2>{data.name}</h2> : null}
             <div className="temp">
               {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
             </div>
