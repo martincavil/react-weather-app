@@ -32,14 +32,16 @@ function App() {
        <div className="container">
 
         <div className="top">
-          <div className="location">
-            {data.name ? <h2>{data.name}</h2> : null}
+          <div className="top-location">
+            <div className="location">
+              {data.name ? <h2>{data.name}</h2> : null}
+            </div>
             <div className="temp">
               {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
             </div>
-            <div className="desc">
-            {data.weather ? <p>{data.weather[0].description}</p> : null}
-            </div>
+          </div>
+          <div className="desc">
+          {data.weather ? <p>{data.weather[0].description}</p> : null}
           </div>
         </div>
 

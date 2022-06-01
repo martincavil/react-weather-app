@@ -16,6 +16,7 @@ body {
   position: relative;
   background-color: black;
   color: white;
+  // background: url('../public/assets/paris-sunny.jpg')  no-repeat center center/cover;
 
   .search {
     display: flex;
@@ -34,7 +35,7 @@ body {
 
   .container {
     max-width: 700px;
-    height: 700px;
+    height: 90%;
     margin: auto;
     padding: 0 1rem;
     top: 10%;
@@ -45,6 +46,9 @@ body {
     .top {
       width: 100%;
       margin: 1rem auto;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
 
       .location {
 
@@ -71,6 +75,9 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 30px 30px;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
     }
 
   }
