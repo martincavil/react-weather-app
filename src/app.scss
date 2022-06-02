@@ -77,8 +77,9 @@ body {
       .desc {
 
         p {
+          // transform: rotate(-90deg);
           font-size: 1.5rem;
-          transform: rotate(-90deg);
+          font-weight: 700;
         }
       }
     }
